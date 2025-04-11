@@ -1,0 +1,244 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+header {
+  background-color: transparent; /* no full background */
+  padding: 1rem 0;
+  text-align: center;
+}
+
+nav {
+  display: inline-block;
+  background-color: #333; /* background just around the nav links */
+  padding: 0.5rem 2rem;
+  border-radius: 8px;
+}
+
+header nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+}
+
+header nav a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+section {
+  padding: 100px 20px;
+  margin-top: 60px;
+}
+
+.home {
+  text-align: center;
+}
+
+.projects,
+.skills,
+.contact {
+  margin-top: -40px;
+}
+
+.skills a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.skills a:hover {
+  background-color: #555;
+}
+
+form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+form input,
+form textarea {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 20px;
+}
+
+form button {
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+form button:hover {
+  background-color: #555;
+}
+
+footer {
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+footer a {
+  color: #0af;
+  margin: 0 10px;
+  text-decoration: none;
+}
+/*
+project section
+*/
+
+.projects-section {
+  width: 80%; /* Increased from 50% */
+  margin: 0 auto; /* Keep it centered */
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  text-align: left;
+}
+
+.project-card {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-card p {
+  margin-top: 1rem;
+  line-height: 1.6;
+}
+
+.live-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.live-button:hover {
+  background-color: #0056b3;
+}
+
+/*
+
+for skills 
+
+*/
+.skills-section {
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+/* Scoped styles begin here */
+.skills-card {
+  border-radius: 16px;
+  padding: 2rem;
+  background-color: #fff;
+  max-width: 800px;
+  margin: auto;
+}
+
+.skills-card .skills-header h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.skills-card .skills-header p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+.skills-card .skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.skills-card .skill-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  background-color: #f0f8ff;
+  transition: all 0.3s ease;
+}
+
+.skills-card .skill-item:hover {
+  background-color: #cfe8ff;
+  border-color: #1d4ed8;
+}
+
+.skills-card .skill-item img {
+  width: 20px;
+  height: 20px;
+}
+
+.skills-card .skill-item a {
+  text-decoration: none;
+  color: #1e40af;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+.skills-card .resume-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.skills-card .resume-button:hover {
+  background-color: #0056b3;
+}

@@ -44,7 +44,7 @@
               Review your progress and mark it as done.
             </p>
             <a
-              href="https://focusontoday-vanillajs.netlify.app/"
+              href="https://focusontoday2.netlify.app/"
               target="_blank"
               class="live-button"
               >View live ↗</a
@@ -62,7 +62,7 @@
               about changing conditions anytime, anywhere.
             </p>
             <a
-              href="https://your-weatherapp-link.com"
+              href="https://weatherappsinwan.netlify.app/"
               target="_blank"
               class="live-button"
               >View live ↗</a
@@ -129,7 +129,7 @@
 
       <section id="contact" class="contact">
         <h2>Contact Me</h2>
-        <form>
+        <form action="https://api.web3forms.com/submit" method="POST">
           <input type="text" name="name" placeholder="Your Name" required />
           <input type="email" name="email" placeholder="Your Email" required />
           <textarea
@@ -154,5 +154,14 @@
         </p>
       </footer>
     </div>
+
+    <script>
+      fetch('/.netlify/functions/myApi')
+        .then(res => res.json())
+        .then(data => {
+          console.log(data); // handle your data here
+        });
+    </script>
+    
   </body>
 </html>
